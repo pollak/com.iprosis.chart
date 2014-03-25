@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension xmlns="http://www.sap.com/bi/zen/sdk"
+	title="iprosischart"
+	version="1.0"
+	vendor="iProsis"
+	id="com.iprosis.chart">
+	
+	<component id="chart" title="Chart" icon="res/chart_bar.png"	
+		handlerType="div"
+		propertySheetPath="res/additional_properties_sheet/additional_properties_sheet.html"
+		databound="true">
+		<jsInclude>res/js/component.js</jsInclude>
+		<cssInclude>res/css/component.css</cssInclude>
+		
+		<property type="ScriptText" title="On Click" 		id="onclick" 	      group="Events"></property>
+		<property type="ResultSet"  title="DataResultSet" 	id="DataResultSet"    group="DataBinding"></property>	
+		<initialization>			
+			<defaultValue property="status">true</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>
